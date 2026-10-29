@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List App</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <h1>To-Do List App</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>     
+                    <th>Priority</th>
+                    <th>Action</th>       
+                </tr>
+            </thead>
+            <tbody id="taskTableBodyId">
+                <tr>
+                    <td>Finish Multimedia assignment</td>
+                    <td>High</td>
+                    <td>
+                        <button class="delete-btn">Delete</button>                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>Finish Java assignment</td>
+                    <td>Medium</td>
+                    <td>
+                        <button class="delete-btn">Delete</button>                      
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3" id="taskCountId">Total tasks: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <form class="controls" action="#">
+            <label for="taskNameId">Task Name:</label>
+            <input id="taskNameId" name="taskName">
+
+            <label for="priorityId">Priority:</label>
+            <select id="priorityId" name="priority">
+                <option value="">--Select--</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+
+            <input type="button" id="addTaskBtnId" value="Add Task">
+        </form>
+    </body>
+</html>

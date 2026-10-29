@@ -1,0 +1,86 @@
+body{
+    font-family: Tahoma;
+    font-size: 11pt;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 12px;
+}
+
+h1{
+    background-color: navy;
+    color: white;
+    padding: 16px;
+    margin: -12px -12px 20px -12px;
+    text-align: center;
+}
+
+table{
+    border: 3px solid navy;
+    border-collapse: collapse;
+    width:60%;
+    float: left;
+}
+
+th, td {
+    padding: 8px 12px;
+    border-bottom: 3px solid navy;
+    font-weight: normal;
+}
+
+tfoot {
+    background-color: plum;
+    font-weight: bold;
+}
+
+form {
+    border: 3px solid navy;
+    border-radius: 5px;
+    background-color: white;
+    padding: 16px;
+    float: right;
+    width: 30%;
+}
+
+label {
+    display: block;
+    float: left;
+    clear: both;
+    width: 35%;
+    margin-bottom: 10px;
+}
+
+input, select {
+    font-size: 11pt;
+    display: block;
+    float: right;
+    width: 60%;
+} 
+
+input[type="button"] {
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+button.delete-btn{
+    background-color: violet;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.delete-btn:hover{
+    background-color: darkviolet;
+}
+
+#addTaskBtnId {
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+#addTaskBtnId:hover{
+    background-color: darkgreen;
+}

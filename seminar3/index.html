@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bar Chart Sample</title>
+    </head>
+    <body>
+        <form>
+            <input id="tbValues" type="text" value="1, 2, 3, 4, 5">
+            <input id="btnDraw" type="button" value="Draw Chart">
+        </form>
+        Click on the bar chart to dowonload it. <br>
+        
+        <canvas id="canvasChart">
+            Your browser does not support the canvas element.
+        </canvas>
+        <script src="canvas-bar-chart-library.js"></script>
+        <script>
+            'use strict'
+            const btnDraw=document.getElementById("btnDraw");
+            const tbValues=document.getElementById("tbValues");
+            const canvasChart=document.getElementById("canvasChart");
+            const barChart= new BarChart(canvasChart);
+            btnDraw.addEventListener("click", () =>{
+                const value = tbValues.value;
+                const data = eval('[' + value + ']');
+                barChart.draw(data);
+        })
+        </script>
+    </body>
+</html>
